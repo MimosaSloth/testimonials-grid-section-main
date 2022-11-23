@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(0, 0%, 81%);
+    padding: 5% 3%;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sand-serif;
+}
+
+#horizontal_cards {
+    display:flex;
+    flex-direction: column;
+}
+
+#horizontal_cards_top {
+    display:flex;
+    flex-direction: column;
+}
+
+#horizontal_cards_bottom {
+    display:flex;
+    flex-direction: column;
+}
+
+#card1, #card2, #card3, #card4, #card5 {
+    margin: 15px;
+    border-radius: 7px;
+    padding: 32.5px;
+    box-shadow: 5px 5px 10px -7px black;
+}
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover {
+    transform: scale(1.01);
+}
+
+#card1 {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(210, 46%, 95%);
+}
+
+#card2 {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+}
+
+#card3 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+#card4 {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(210, 46%, 95%);
+}
+
+#card5 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 22px;
+    opacity: 90%
+}
+
+h4 {
+    margin-bottom: 4px;
+    margin: 0px 0px 2px 0px;
+    opacity: 85%;
+}
+
+h5 {
+    margin-top: 4px;
+    margin: 0px 0px 0px 0px;
+    opacity: 50%;
+}
+
+p {
+    margin-bottom: 0px;
+    opacity: 50%;
+}
+
+.face_icon {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    border: 2px solid rgb(153, 148, 148);
+}
+
+.title {
+    margin-left: 20px;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    #cards {
+        flex-direction: column;
+    }
+
+    #horizontal_cards {
+        flex-direction: column;
+        flex-basis: 70%;
+    }
+
+    #horizontal_cards_top {
+        flex-direction: row;
+    }
+
+    #horizontal_cards_bottom {
+        flex-direction: row;
+    }
+
+    #card5 {
+        flex-basis: 30%;
+    }
+}
+
+@media (min-width: 768px) {
+    #cards {
+        flex-direction: row;
+    }
+}
